@@ -7,7 +7,7 @@ func Swap(min *float64, current *float64) {
 }
 
 func Sort(input []float64) []float64 {
-	for i := 0; i < len(input); i++ {
+	for i := 0; i < len(input)-1; i++ {
 		min := i
 		for j := i + 1; j < len(input); j++ {
 			if input[j] < input[min] {
